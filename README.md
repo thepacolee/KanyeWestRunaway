@@ -10,4 +10,4 @@ How to Set-up
 
 2.Run Runaway.xcodeproj
 
-3.Once Xcode starts running, click on the play button on the top left corner
+3.Once Xcode starts running, click on the play button in the top left corner
