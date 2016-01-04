@@ -1,25 +1,214 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Runaway" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kd-7k-eEq">
+                                <rect key="frame" x="20" y="361" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YG2-Ko-sKZ"/>
+                                    <constraint firstAttribute="width" constant="280" id="gb5-XX-5k3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <state key="normal" title="Verse/Hook">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVerse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IX9-Rc-szK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TK-nb-amN">
+                                <rect key="frame" x="20" y="437" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7gR-ga-h8z"/>
+                                    <constraint firstAttribute="width" constant="280" id="JR0-oC-PPm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <state key="normal" title="Bridge">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBridge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KzI-IF-dZP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPq-a4-t6P">
+                                <rect key="frame" x="20" y="323" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kqG-TN-n2l"/>
+                                    <constraint firstAttribute="width" constant="280" id="wcV-r4-jpI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <state key="normal" title="Intro">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playIntro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eE0-Lu-mca"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Song Part" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73g-7z-2Ng">
+                                <rect key="frame" x="20" y="291" width="280" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="D2A-3U-V81"/>
+                                    <constraint firstAttribute="width" constant="280" id="nMb-mm-StK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runaway Samples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i22-hw-3uw">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="7Qz-2h-CXR"/>
+                                    <constraint firstAttribute="height" constant="21" id="YZR-3R-mJE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S6-CE-Wxu">
+                                <rect key="frame" x="20" y="475" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QAk-Xa-aYA"/>
+                                    <constraint firstAttribute="width" constant="280" id="Rgy-An-ZGM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMK-jj-8ko"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Dq-nS-NEN">
+                                <rect key="frame" x="20" y="49" width="133" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noD-wS-p1v">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="110"/>
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="kanye1.png"/>
+                                        <connections>
+                                            <action selector="playLook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOp-e2-ztL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="Imc-tV-rG1"/>
+                                    <constraint firstAttribute="height" constant="110" id="S2d-HX-q78"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5V-lw-XrA">
+                                <rect key="frame" x="169" y="49" width="131" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-00-LCy">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="110"/>
+                                        <state key="normal" image="kanye2.png"/>
+                                        <connections>
+                                            <action selector="playLadies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fee-T2-Gu3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="Vs6-9n-2tj"/>
+                                    <constraint firstAttribute="height" constant="110" id="zLH-jL-GO3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7K-Co-781">
+                                <rect key="frame" x="20" y="167" width="280" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXx-Pr-rRY">
+                                        <rect key="frame" x="74" y="0.0" width="132" height="116"/>
+                                        <state key="normal" image="kanye3.png"/>
+                                        <connections>
+                                            <action selector="playStars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfk-d3-3zk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="IiE-Bw-zZl"/>
+                                    <constraint firstAttribute="width" constant="280" id="QOW-Pu-XB5"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO0-ht-GHk">
+                                <rect key="frame" x="20" y="399" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="763-1W-4u6"/>
+                                    <constraint firstAttribute="width" constant="280" id="8Op-Gl-9L2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <state key="normal" title="Hook">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playHook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YX5-QB-2Xj"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Md-4x-vLi">
+                                <rect key="frame" x="101" y="513" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Uvw-nM-BIA"/>
+                                    <constraint firstAttribute="width" constant="114" id="pb2-3j-Zlf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="controlAudio:" destination="BYZ-38-t0r" eventType="valueChanged" id="MRN-lz-tac"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="V7K-Co-781" firstAttribute="top" secondItem="9Dq-nS-NEN" secondAttribute="bottom" constant="8" symbolic="YES" id="AoZ-fu-MGl"/>
+                            <constraint firstItem="eO0-ht-GHk" firstAttribute="top" secondItem="6Kd-7k-eEq" secondAttribute="bottom" constant="8" symbolic="YES" id="D94-rk-Vrb"/>
+                            <constraint firstItem="9Dq-nS-NEN" firstAttribute="leading" secondItem="i22-hw-3uw" secondAttribute="leading" id="J4X-Lt-chX"/>
+                            <constraint firstItem="bPq-a4-t6P" firstAttribute="leading" secondItem="73g-7z-2Ng" secondAttribute="leading" id="JMs-ZX-4eq"/>
+                            <constraint firstItem="V7K-Co-781" firstAttribute="leading" secondItem="9Dq-nS-NEN" secondAttribute="leading" id="N9J-FD-B4B"/>
+                            <constraint firstItem="9Dq-nS-NEN" firstAttribute="top" secondItem="i22-hw-3uw" secondAttribute="bottom" constant="8" symbolic="YES" id="QAh-li-nf6"/>
+                            <constraint firstItem="6S6-CE-Wxu" firstAttribute="top" secondItem="6TK-nb-amN" secondAttribute="bottom" constant="8" symbolic="YES" id="S3Q-jF-ETN"/>
+                            <constraint firstItem="bPq-a4-t6P" firstAttribute="top" secondItem="73g-7z-2Ng" secondAttribute="bottom" constant="8" symbolic="YES" id="ShJ-gm-qO8"/>
+                            <constraint firstItem="9Dq-nS-NEN" firstAttribute="top" secondItem="S5V-lw-XrA" secondAttribute="top" id="V5S-df-3DF"/>
+                            <constraint firstItem="V7K-Co-781" firstAttribute="leading" secondItem="73g-7z-2Ng" secondAttribute="leading" id="YtN-o9-NCe"/>
+                            <constraint firstItem="eO0-ht-GHk" firstAttribute="leading" secondItem="6TK-nb-amN" secondAttribute="leading" id="aKO-YM-ABM"/>
+                            <constraint firstItem="73g-7z-2Ng" firstAttribute="top" secondItem="V7K-Co-781" secondAttribute="bottom" constant="8" symbolic="YES" id="bey-gM-IC7"/>
+                            <constraint firstItem="6S6-CE-Wxu" firstAttribute="leading" secondItem="6TK-nb-amN" secondAttribute="leading" id="cmy-zd-WgN"/>
+                            <constraint firstItem="V7K-Co-781" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="deF-5c-icw"/>
+                            <constraint firstItem="S5V-lw-XrA" firstAttribute="trailing" secondItem="i22-hw-3uw" secondAttribute="trailing" id="hEr-8l-shr"/>
+                            <constraint firstItem="i22-hw-3uw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jYd-4F-sfA"/>
+                            <constraint firstItem="6Kd-7k-eEq" firstAttribute="top" secondItem="bPq-a4-t6P" secondAttribute="bottom" constant="8" symbolic="YES" id="kj8-jd-lPi"/>
+                            <constraint firstItem="bPq-a4-t6P" firstAttribute="leading" secondItem="6Kd-7k-eEq" secondAttribute="leading" id="low-Uh-G5I"/>
+                            <constraint firstItem="4Md-4x-vLi" firstAttribute="top" secondItem="6S6-CE-Wxu" secondAttribute="bottom" constant="8" symbolic="YES" id="m4z-D3-UHa"/>
+                            <constraint firstItem="6Kd-7k-eEq" firstAttribute="leading" secondItem="eO0-ht-GHk" secondAttribute="leading" id="ncI-IM-Nxx"/>
+                            <constraint firstItem="6S6-CE-Wxu" firstAttribute="centerX" secondItem="4Md-4x-vLi" secondAttribute="centerX" id="vMo-7o-b2n"/>
+                            <constraint firstItem="6TK-nb-amN" firstAttribute="top" secondItem="eO0-ht-GHk" secondAttribute="bottom" constant="8" symbolic="YES" id="y1c-C6-hex"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="myAudioController" destination="4Md-4x-vLi" id="Mnl-zM-8FB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="394" y="291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kanye1.png" width="269" height="270"/>
+        <image name="kanye2.png" width="267" height="270"/>
+        <image name="kanye3.png" width="266" height="272"/>
+    </resources>
 </document>

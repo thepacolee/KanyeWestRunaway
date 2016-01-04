@@ -15,6 +15,16 @@
 		002FD2B71C2FB18D0090DB88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002FD2B51C2FB18D0090DB88 /* LaunchScreen.storyboard */; };
 		002FD2C21C2FB18D0090DB88 /* RunawayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FD2C11C2FB18D0090DB88 /* RunawayTests.swift */; };
 		002FD2CD1C2FB18D0090DB88 /* RunawayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FD2CC1C2FB18D0090DB88 /* RunawayUITests.swift */; };
+		009B46BE1C307E9600FBB58B /* kanye1.png in Resources */ = {isa = PBXBuildFile; fileRef = 009B46BB1C307E9600FBB58B /* kanye1.png */; };
+		009B46BF1C307E9600FBB58B /* kanye2.png in Resources */ = {isa = PBXBuildFile; fileRef = 009B46BC1C307E9600FBB58B /* kanye2.png */; };
+		009B46C01C307E9600FBB58B /* kanye3.png in Resources */ = {isa = PBXBuildFile; fileRef = 009B46BD1C307E9600FBB58B /* kanye3.png */; };
+		00E67B061C311B6600D374D0 /* Bridge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E67AFE1C311B6600D374D0 /* Bridge.mp3 */; };
+		00E67B081C311B6600D374D0 /* Hook.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E67B001C311B6600D374D0 /* Hook.mp3 */; };
+		00E67B091C311B6600D374D0 /* Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E67B011C311B6600D374D0 /* Intro.mp3 */; };
+		00E67B0A1C311B6600D374D0 /* Ladies .wav in Resources */ = {isa = PBXBuildFile; fileRef = 00E67B021C311B6600D374D0 /* Ladies .wav */; };
+		00E67B0B1C311B6600D374D0 /* Look At You.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00E67B031C311B6600D374D0 /* Look At You.wav */; };
+		00E67B0C1C311B6600D374D0 /* Stars.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00E67B041C311B6600D374D0 /* Stars.wav */; };
+		00E67B0D1C311B6600D374D0 /* Verse & Hook.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E67B051C311B6600D374D0 /* Verse & Hook.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		002FD2C81C2FB18D0090DB88 /* RunawayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunawayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		002FD2CC1C2FB18D0090DB88 /* RunawayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunawayUITests.swift; sourceTree = "<group>"; };
 		002FD2CE1C2FB18D0090DB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009B46BB1C307E9600FBB58B /* kanye1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanye1.png; sourceTree = "<group>"; };
+		009B46BC1C307E9600FBB58B /* kanye2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanye2.png; sourceTree = "<group>"; };
+		009B46BD1C307E9600FBB58B /* kanye3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanye3.png; sourceTree = "<group>"; };
+		00E67AFE1C311B6600D374D0 /* Bridge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bridge.mp3; sourceTree = "<group>"; };
+		00E67B001C311B6600D374D0 /* Hook.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hook.mp3; sourceTree = "<group>"; };
+		00E67B011C311B6600D374D0 /* Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Intro.mp3; sourceTree = "<group>"; };
+		00E67B021C311B6600D374D0 /* Ladies .wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ladies .wav"; sourceTree = "<group>"; };
+		00E67B031C311B6600D374D0 /* Look At You.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Look At You.wav"; sourceTree = "<group>"; };
+		00E67B041C311B6600D374D0 /* Stars.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Stars.wav; sourceTree = "<group>"; };
+		00E67B051C311B6600D374D0 /* Verse & Hook.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Verse & Hook.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,8 @@
 		002FD2A81C2FB18D0090DB88 /* Runaway */ = {
 			isa = PBXGroup;
 			children = (
+				00E67AFD1C311B6600D374D0 /* Music Samples */,
+				009B46BA1C307E9600FBB58B /* Kanye Pictures */,
 				002FD2A91C2FB18D0090DB88 /* AppDelegate.swift */,
 				002FD2AB1C2FB18D0090DB88 /* ViewController.swift */,
 				002FD2AD1C2FB18D0090DB88 /* Main.storyboard */,
@@ -126,6 +148,30 @@
 				002FD2CE1C2FB18D0090DB88 /* Info.plist */,
 			);
 			path = RunawayUITests;
+			sourceTree = "<group>";
+		};
+		009B46BA1C307E9600FBB58B /* Kanye Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				009B46BB1C307E9600FBB58B /* kanye1.png */,
+				009B46BC1C307E9600FBB58B /* kanye2.png */,
+				009B46BD1C307E9600FBB58B /* kanye3.png */,
+			);
+			path = "Kanye Pictures";
+			sourceTree = "<group>";
+		};
+		00E67AFD1C311B6600D374D0 /* Music Samples */ = {
+			isa = PBXGroup;
+			children = (
+				00E67AFE1C311B6600D374D0 /* Bridge.mp3 */,
+				00E67B001C311B6600D374D0 /* Hook.mp3 */,
+				00E67B011C311B6600D374D0 /* Intro.mp3 */,
+				00E67B021C311B6600D374D0 /* Ladies .wav */,
+				00E67B031C311B6600D374D0 /* Look At You.wav */,
+				00E67B041C311B6600D374D0 /* Stars.wav */,
+				00E67B051C311B6600D374D0 /* Verse & Hook.mp3 */,
+			);
+			path = "Music Samples";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +278,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E67B081C311B6600D374D0 /* Hook.mp3 in Resources */,
+				00E67B091C311B6600D374D0 /* Intro.mp3 in Resources */,
+				00E67B061C311B6600D374D0 /* Bridge.mp3 in Resources */,
+				009B46BF1C307E9600FBB58B /* kanye2.png in Resources */,
 				002FD2B71C2FB18D0090DB88 /* LaunchScreen.storyboard in Resources */,
+				009B46C01C307E9600FBB58B /* kanye3.png in Resources */,
+				00E67B0B1C311B6600D374D0 /* Look At You.wav in Resources */,
+				00E67B0D1C311B6600D374D0 /* Verse & Hook.mp3 in Resources */,
+				00E67B0A1C311B6600D374D0 /* Ladies .wav in Resources */,
 				002FD2B41C2FB18D0090DB88 /* Assets.xcassets in Resources */,
 				002FD2AF1C2FB18D0090DB88 /* Main.storyboard in Resources */,
+				00E67B0C1C311B6600D374D0 /* Stars.wav in Resources */,
+				009B46BE1C307E9600FBB58B /* kanye1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +542,7 @@
 				002FD2D31C2FB18D0090DB88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		002FD2D41C2FB18D0090DB88 /* Build configuration list for PBXNativeTarget "RunawayTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +551,7 @@
 				002FD2D61C2FB18D0090DB88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		002FD2D71C2FB18D0090DB88 /* Build configuration list for PBXNativeTarget "RunawayUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +560,7 @@
 				002FD2D91C2FB18D0090DB88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
